@@ -1,7 +1,13 @@
-using FitLife.Data;
+﻿using FitLife.Data;
+using FitLife.Repositories;
+using FitLife.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 // Add services to the container.
 
@@ -13,6 +19,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<IPostRepository, PostRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
