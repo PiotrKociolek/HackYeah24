@@ -1,0 +1,22 @@
+.article {
+  width: 640px;
+  z-index: 1;
+  background-color: var(--white);
+}
+
+.article img { 
+  content: url(https://eco-cdn.iqpc.com/eco/images/channel_content/images/wellbeing_guide.jpg);
+  height: 160px;
+  width: 100%;
+}
+
+.article .content {
+  padding: 16px 24px;
+  align-items: start;
+  gap: 16px;
+  text-overflow: ellipsis;
+}
+
+.article .content h2 {
+  text-align: start;
+}
