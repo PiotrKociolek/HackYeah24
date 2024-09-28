@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace FitLife.entities
 {
-    public class Questions
+    public class Question
     {
         public int id {get; set;}
         public string question {get; set;}
