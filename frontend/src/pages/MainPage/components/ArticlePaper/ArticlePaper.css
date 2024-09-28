@@ -1,0 +1,11 @@
+.article {
+  width: 40svw;
+  z-index: 1;
+  background-color: var(--white);
+}
+
+.article img { 
+  content: url(https://eco-cdn.iqpc.com/eco/images/channel_content/images/wellbeing_guide.jpg);
+  height: 220px;
+  width: 100%;
+}
