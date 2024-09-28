@@ -1,0 +1,167 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --violet: #481865;
+  --darkViolet: #3e084c;
+  --blue: #025d93;
+  --lightBlue: #86f4ee;
+  --red: #e91c4c;
+  --lightRed: #e3526e;
+  --boxShadowColor: rgba(213, 200, 221, 1);
+
+  --primaryFont: 'montserrat-regular', sans-serif;
+  --secondaryFont: 'raleway-regular', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--primaryFont);
+}
+
+a, img, :before, :after, .transition {
+  transition: all 200ms linear;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Flex */
+
+.center {
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.flexBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.flexLeft {
+  justify-content: flex-start;
+}
+
+.flexRight {
+  justify-content: flex-end;
+}
+
+.flexCenter {
+  justify-content: center;
+}
+
+.flexTop {
+  align-items: flex-start;
+}
+
+.flexBottom {
+  align-items: flex-end;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.flexFull {
+  flex: auto;
+}
+
+/* Buttons */
+
+.button {
+  font-family: var(--secondaryFont);
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--white);
+
+}
+
+.button.styled {
+  border: 2px solid;
+  border-radius: 50px;
+  border-color: var(--white);
+  background-color: var(--darkViolet);
+  padding: 15px 25px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--darkViolet);
+  }
+}
+
+.button.unstyled {
+  text-decoration: underline;
+
+  &:hover {
+    font-weight: 900;
+  }
+}
+
+/* Styles */
+.shadow {
+  -webkit-box-shadow: 0px 5px 10px 0px var(--boxShadowColor);
+  -moz-box-shadow: 0px 5px 10px 0px var(--boxShadowColor);
+  box-shadow: 0px 5px 10px 0px var(--boxShadowColor);
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'montserrat-italic';
+  src: url('../fonts/Montserrat-Italic.woff2') format('woff2'),
+       url('../fonts/Montserrat-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'montserrat-regular';
+  src: url('../fonts/Montserrat.woff2') format('woff2'),
+       url('../fonts/Montserrat.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-italic';
+  src: url('../fonts/Raleway-Italic.woff2') format('woff2'),
+       url('../fonts/Raleway-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'raleway-regular';
+  src: url('../fonts/Raleway.woff2') format('woff2'),
+       url('../fonts/Raleway.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.h1 .h2 .h3 .h4 .h5 .h6 {
+  font-family: var(--primaryFont);
+  font-weight: 700;
+}
+
+.h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: var(--violet);
+}
+
+h3 {
+  font-size: 1rem;
+}
