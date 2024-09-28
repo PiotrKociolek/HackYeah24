@@ -1,0 +1,67 @@
+.login-page {
+  width: 20svw;
+  height: 40svh;
+  padding: 28px;
+
+  border: 2px solid var(--boxShadowColor);
+  border-radius: 10px;
+}
+
+.login-page h2 {
+  font-size: 36px;
+  font-weight: 900;
+  width: 100%;
+  text-align: start;
+}
+
+.login-page form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-page form input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid var(--boxShadowColor);
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.login-page .form {
+  margin-top: 32px;
+  gap: 24px;
+  width: 100%;
+  font-family: var(--primaryFont);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.login-page .form input {
+  font-family: var(--primaryFont);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.login-page .input-box {
+  width: 100%;
+}
+
+.login-page label {
+  color: var(--darkGray);
+  text-align: start;
+  line-height: 2rem;
+}
+
+.login-page .form .button {
+  margin-top: 32px;
+  width: 80%;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--darkViolet);
+    border-color: var(--darkViolet);
+  }
+}
+
+/* https://hype4.academy/articles/design/minimal-login-form-ui-design-guide */
