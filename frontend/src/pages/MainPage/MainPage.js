@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import '../../standard.css'
+import 'standard.css';
 import './MainPage.css';
 import React from 'react';
 import ArticlePaper from '../MainPage/components/ArticlePaper/ArticlePaper';
@@ -12,8 +12,8 @@ function MainPage() {
           <ArticlePaper/>
         </div>
         <div className='doctor-image'>
-          <img alt="doctor image"></img>
-        </div> 
+          <img alt="doctor"></img>
+        </div>
       </div>
   );
 }

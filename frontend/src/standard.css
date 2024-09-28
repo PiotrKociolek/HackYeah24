@@ -8,6 +8,8 @@
   --red: #e91c4c;
   --lightRed: #e3526e;
   --boxShadowColor: rgba(213, 200, 221, 1);
+  --lightGray: #f5f5f5;
+  --darkGray: #3e3e3e;
 
   --primaryFont: 'montserrat-regular', sans-serif;
   --secondaryFont: 'raleway-regular', sans-serif;
@@ -33,7 +35,7 @@ img {
 
 .center {
   margin: 0 auto;
-  padding: 0 40px;
+  width: 85svw;
 }
 
 .flexBlock {
@@ -82,7 +84,7 @@ img {
   font-weight: 900;
   font-size: 1.2rem;
   color: var(--white);
-
+  cursor: pointer;
 }
 
 .button.styled {
@@ -91,7 +93,6 @@ img {
   border-color: var(--white);
   background-color: var(--darkViolet);
   padding: 15px 25px;
-  cursor: pointer;
 
   &:hover {
     background-color: var(--white);

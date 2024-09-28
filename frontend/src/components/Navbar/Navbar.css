@@ -2,9 +2,13 @@
   width: 100svw;
   background-color: var(--violet);
   color: var(--white);
-  box-sizing: border-box;
   padding: 15px 25px;
   position: sticky;
+  z-index: 999;
+  height: 90px;
+  box-sizing: border-box;
+
+  margin-bottom: 64px;
 }
 
 .logo {

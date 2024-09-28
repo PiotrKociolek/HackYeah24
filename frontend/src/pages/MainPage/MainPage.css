@@ -1,16 +1,15 @@
 .main-page {
-  height: calc(100svh-);
+  height: calc(100svh-90px);
   position: relative;
 }
 
 .article-part {
-  width: 50%;
   gap: 36px;
 }
 
 .doctor-image {
   position: absolute;
-  content: url('../../images/doctor-main-page.svg');
+  content: url('images/doctor-main-page.svg');
   right: 0;
   width: 50svw;
 }
