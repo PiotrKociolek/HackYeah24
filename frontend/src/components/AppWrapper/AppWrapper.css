@@ -1,0 +1,6 @@
+.App {
+  width: 100svw;
+  height: 100svh;
+  text-align: center;
+  background-color: var(--white);
+}
