@@ -24,6 +24,10 @@ img {
   gap: 24px;
 }
 
+.header .h1 {
+  color: var(--white);
+}
+
 /* 
 .App-logo {
   height: 40vmin;

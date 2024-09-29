@@ -1,0 +1,28 @@
+.answer {
+  gap: 32px;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--darkGray);
+}
+
+input[type="radio"] {
+  -ms-transform: scale(1.8); /* IE 9 */
+  -webkit-transform: scale(1.8); /* Chrome, Safari, Opera */
+  transform: scale(1.8);
+  color: var(--gray);
+}
+/* 
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+} */
+
