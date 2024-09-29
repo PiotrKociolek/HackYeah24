@@ -1,4 +1,4 @@
-# HackYeah24
+# HackYeah24 - FitLife
 
 Backend and frontend are just templates for further implementation :)
 #TO open backend project u need to open solution file and perform migration, update-database in package manager console. In case of error try remove migrations and use commands" Add-Migration NameOfMigration" and then Update-Database. 
