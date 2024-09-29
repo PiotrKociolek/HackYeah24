@@ -24,6 +24,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IPostRepository, PostRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IAuthReposiotry, AuthRepository>();
+builder.Services.AddScoped<ISurveyReposiotry, SurveyRepository>();
+builder.Services.AddScoped<ISurveyService, SurveyService>();
+
+// Add this line to register IAnswerRepository and its implementation
+builder.Services.AddScoped<IAnswerRepository, AnswerRepository>();
+
+// Already existing registration for IAnswerService
+builder.Services.AddScoped<IAnswerService, AnswerService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>

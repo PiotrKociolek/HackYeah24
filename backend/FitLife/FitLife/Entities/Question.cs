@@ -7,9 +7,11 @@ namespace FitLife.entities
 {
     public class Question
     {
-        public int id {get; set;}
-        public string question {get; set;}
-        public int indexId {get; set;}
-        //Tu miejsce na  enum ale to się popiero zrobi
+        public int Id { get; set; }
+        public string Content { get; set; }
+        public bool IsHardcoded { get; set; } = false;
+        public bool IsPredefined { get; set; } = false;
+        public int answerId { get; set; }
     }
+
 }
