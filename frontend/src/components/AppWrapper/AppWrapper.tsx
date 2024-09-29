@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import { memo } from 'react';
 import Navbar from '../Navbar/Navbar';
 import './AppWrapper.css';
@@ -9,7 +9,7 @@ interface Props {
 }
 
 const AppWrapper = ({ children }: Props) => {
-  const [isFormVisible, setIsFormVisible] = useState(false);
+  const [isFormVisible, setIsFormVisible] = useState(true);
 
   return (
     <div className="App">

@@ -5,5 +5,37 @@
   width: 50%;
   z-index: 20;
   background-color: var(--white);
-  height: 800px;
+  height: calc(100svh - 90px);
+  box-sizing: border-box;
+  padding: 120px 110px;
+}
+
+.form-box .exit-icon {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 32px;
+}
+
+.form-box .question {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: start;
+}
+
+.form-box .answers {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.form-box .button-box {
+  width: 100%;
+  margin-top: 180px;
+}
+
+.form-box .button-box a {
+  width: 120px;
 }

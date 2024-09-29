@@ -1,0 +1,28 @@
+.experts {
+  gap: 38px;
+}
+
+.expert {
+  width: 510px;
+  z-index: 1;
+  background-color: var(--white);
+  height: 300px;
+  gap: 16px;
+}
+
+.expert img { 
+  content: url('images/doctor-experts-page.svg');
+  height: 100%;
+  width: 200px;
+}
+
+.expert .content {
+  padding: 16px 24px;
+  align-items: start;
+  gap: 16px;
+  text-overflow: ellipsis;
+}
+
+.expert .content h2 {
+  text-align: start;
+}

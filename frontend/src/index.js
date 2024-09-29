@@ -7,6 +7,8 @@ import MainPage from './pages/MainPage/MainPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import AppWrapper from './components/AppWrapper/AppWrapper.tsx';
+import ArticlePage from './pages/ArticlePage/ArticlePage.tsx';
+import ExpertPage from './pages/ExpertPage/ExpertPage.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +20,9 @@ root.render(
             <Route index element={<MainPage />} />
           </Route>
           <Route path="login" element={<LoginPage />} />
+          <Route path="articles" element={<ArticlePage/>} />
+          <Route path="experts" element={<ExpertPage/>} />
+          <Route path="*" element={<div>404</div>} />
         </Routes>
       </AppWrapper>
     </BrowserRouter>

@@ -8,10 +8,10 @@ function Navbar() {
   return (    
       <header className="header flexBlock">
         <div className="logo flexBlock flexLeft">
-          <a href="/" className="logo-icon">
+          {/* <a href="/" className="logo-icon">
             <img src={logo} alt="logo" />
-          </a>
-          <a className="home-link"> 
+          </a> */}
+          <a href="/" className="home-link"> 
             <h1 className='h1'> Fit Life </h1>
           </a>
         </div>

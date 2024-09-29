@@ -1,19 +1,19 @@
 import { memo } from 'react';
-import './ArticlePaper.css';
+import './ArticleThumbnail.css';
 import 'standard.css';
 import React from 'react';
 
-function ArticlePaper() {
+function ArticleThumbnail() {
   return (    
     <a href="#" className='article shadow'>
       <img alt="article-image" />
-      <div className='content flexBlock flexColumn flexLeft'>
+      <div className='content flexBlock flexColumn flexTop'>
         <h3> Imię i nazwisko </h3>
         <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit </h2>
-        <date> Wrzesień 28, 2024</date>
+        <p className='date'> Wrzesień 28, 2024 </p>
       </div>
     </a>
   );
 }
 
-export default memo(ArticlePaper);
+export default memo(ArticleThumbnail);
